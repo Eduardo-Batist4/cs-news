@@ -1,0 +1,10 @@
+<div class="createComment-container">
+    <a href="/comments/dashboard" class="button-return-dashboard">voltar</a>
+    <h1>Editando comentário</h1>
+    <form action="/comments/edit" method="POST" class="form-create">
+        <input type="hidden" name="id" value="{{comment.id}}">
+        <label for="title">Comentário</label>
+        <input type="text" name="title" placeholder="Escreva um comentário sobre cs.." required="true" value="{{comment.title}}">
+        <button type="submit" class="button-create">comentar</button>
+    </form>
+</div>

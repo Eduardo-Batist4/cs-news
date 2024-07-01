@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Cs2News</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/"><img src="/images/cs2.png" alt="logo-cs"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">news</a></li>
+                {{#if session.userid}}
+                    <li><a href="/comments/dashboard">dashboard</a></li>
+                    <li><a href="/logout">sair</a></li>
+                {{else}}
+                    <li><a href="/login">login</a></li>
+                    <li><a href="/register">registro</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        {{#if messages.message}}
+        <div class="message-container">
+            {{messages.message}}
+        </div>
+        {{/if}}
+        {{{body}}}
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Eduardo Batista. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+/* ---- logo ---- */
+.logo{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.logo a img {
+    width: 100%;
+    height: 100%;
+}
+/* ----------------------------- */
+
+
+/* ---- links de navegação ---- */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.navbar ul li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ----------------------------- */
+
+/* ---- main ---- */
+.main {
+    width: 100%;
+    min-height: calc(90vh - 60px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main h1 {
+    margin:20px;
+    text-transform: uppercase;
+}
+
+.message-container {
+    width: 450px;
+    padding: 20px 0;
+    font-size: 18px;
+    margin-top: 40px;
+    border: 2px solid #ff820f;
+    color: #ff820f;
+}
+
+.titleHome-container {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.titleHome-container p {
+    margin-top: 10px;
+}
+.titleHome-container span {
+    color: #ff820f;
+    font-weight: bold;
+}
+
+.home-container {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.search-container {
+    display: flex;
+}
+.search-container a {
+    height: 100%;
+    padding: 5px 15px;
+    color: #ff820f;
+    border: 2px solid #ff820f;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+}
+.field-search {
+    padding: 5px 10px;
+    width: 300px;
+    height: 100%;
+    border: none;
+    background-color: #ccc;
+    color: #1e1e1e;
+    outline: none;
+}
+.button-searchComment {
+    height: 100%;
+    padding: 5px 15px;
+    background-color: #ff820f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 200ms ease-in;
+}
+.button-searchComment:hover {
+    transform: scale(1.02);
+}
+
+.comments-container {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.figure {
+    margin-bottom: 10px;
+    text-align: start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.about-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+.about-comment figcaption {
+    margin-top: 15px;
+    color: #3d3d3d;
+}
+.about-comment figcaption span{
+    font-weight: bold;
+    color: #ff820f;
+}
+
+/* ----------------------------- */
+
+/* ---- dashboard ---- */
+.dashboard-container {
+    width: 50%;
+    min-height: calc(90vh - 60px);
+    text-align: start;
+}
+.dashboard-container h3 {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    color: #3d3d3d;
+}
+.title-dashboard  h2{
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+.buttonDashboard-create {
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #ff820f;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+.listComments-container {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #ccc;
+}
+.listComments-container p{
+    margin-top: 10px;
+}
+.comments-li {
+    margin: 20px 0 10px;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+.comments-li p {
+    font-size: 20px;    
+}
+.actions {
+    display: flex;
+    margin-top: 15px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.buttonEdit-comment {
+    padding: 5px 15px;
+    border: 1px solid #ff820f;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+    transition: 400ms ease-in;
+}
+
+.buttonEdit-comment:hover {
+    color: #ff820f;
+}
+
+/* ----------------------------- */
+
+/* ---- create ---- */
+.createComment-container {
+    padding: 10px;
+    text-align: start;
+}
+.button-return-dashboard {
+    text-decoration: none;
+    border-bottom: 1px solid #ff820f;
+    color: #ffffff;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+.form-create {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.form-create label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-create input {
+    padding: 10px 8px;
+    font-size: 18px;
+    border: 2px solid #ff820f;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+}
+.button-create {
+    width: 180px;
+    padding: 10px;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #ff820f;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.button-create:hover {
+    transform: scale(1.02);
+}
+
+/* ----------------------------- */
+
+/* ---- register e login ---- */
+.auth-container {
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.input-container label {
+    font-weight: bold;
+}
+.input-container input {
+    margin: 10px 0;
+    padding: 10px 5px;
+    outline: none;
+    font-size: 16px;
+}
+.input-container input:hover {
+    border: 2px solid #ff820f;
+}
+.submit-button {
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    border: 2px solid #ff820f;
+    color: #ff820f;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 500ms ease-in;
+    text-transform: uppercase;
+}
+.submit-button:hover{
+    background-color: #ff820f;
+    color: #ffffff;
+}
+/* ----------------------------- */
+
+/* ---- footer ---- */
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+/* ----------------------------- */

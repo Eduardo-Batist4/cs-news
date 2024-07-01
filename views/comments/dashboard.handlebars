@@ -1,0 +1,26 @@
+<div class="dashboard-container">
+    <div class="title-dashboard">
+        <h2>dashboard</h2>
+        <a href="/comments/add" class="buttonDashboard-create">Criar Comentario</a>
+    </div>
+    <h3>Seus comentários</h3>
+    <div class="listComments-container">
+        <ul>
+            {{#each comments}}
+                <li class="comments-li">
+                    <p>{{this.title}}</p>
+                    <span class="actions">
+                        <a href="/comments/edit/{{this.id}}" class="buttonEdit-comment">Editar</a>
+                        <form action="/comments/remove" method="POST">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="submit" value="Excluir" class="buttonEdit-comment">
+                        </form>
+                    </span>
+                </li>
+            {{/each}}
+        </ul>
+        {{#if emptyComments}}
+            <p>Ainda não há nenhum comentario.</p>
+        {{/if}}
+    </div>
+</div>
