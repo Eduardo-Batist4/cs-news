@@ -70,7 +70,7 @@ app.use('/', authRoutes);
 app.get('/', CommentController.showComments);
 
 conn.sync().then(() => {
-    app.listen(process.env.PORT);
+    app.listen(process.env.PORT || 3000);
 }).catch((err) => {
     console.log(err);
 })
