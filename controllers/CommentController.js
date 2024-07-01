@@ -32,7 +32,7 @@ module.exports = class CommentController {
 
         // format date
         const dateFormatedComments = commentReverse.map((comment) => {
-            const formatteDate = moment(comment.updatedAt).format('MM/DD/YYYY');
+            const formatteDate = moment(comment.createdAt).format('MM/DD/YYYY');
             return {
                 ...comment,
                 formatteDate
