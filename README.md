@@ -6,6 +6,9 @@ Este projeto é meu primeiro monolito, desenvolvido com o principal objetivo de 
 Neste projeto, utilizei o padrão de arquitetura MVC (Model, View, Controller). Implementei validações e proteções de senha. Como é um projeto de estudo pessoal, houve desafios iniciais por não saber algumas dependências. No entanto, com paciência, consegui aprender e compreender como funcionam os cookies e como utilizar hashes de senha com bcryptjs.
 
 **Como estou usando HTML, decidi não usar o middleware method-override para utilizar os métodos PUT/DELETE. Utilizei apenas os métodos GET e POST para fazer as requisições.**
+
+https://github.com/Eduardo-Batist4/cs-news/assets/116302551/37e09742-492b-44c3-a335-31cf7e2ec8b5
+
 ## Funcionalidades
 
 - Criar uma conta
